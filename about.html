@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me - Atta's Website</title>
+    <style type="text/css">
+        * {
+            text-decoration: none;
+        }
+        .navbar {
+            background: yellow; font-family: calibri; padding-right: 15px; padding-left: 15px;
+        }
+        .navdiv {
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        .logo a {
+            font-size: 35px; font-weight: 600; color: black;
+        }
+        li {
+            list-style: none; display: inline-block;
+        }
+        li a {
+            color: black; font-size: 18px; font-weight: bold; margin-right: 25px;
+        }
+        body {
+            font-family: calibri; background-color: #3AD3F9;
+ margin: 0;
+        }
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background: yellow; padding: 20px; text-align: center; font-family: calibri;
+        }
+        .footer-icons img {
+            width: 20px; height: 20px; margin: 0 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+   <img src="image/banner.png" style="width:100%">
+</header>
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="index.html">Atta's Website</a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="hobby.html">Hobby</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="friend.html">Friend</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="achievement.html">Achievement</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="row">
+  <div class="column">
+    <style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 50%;
+  position: relative;
+  margin: auto;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 50px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="image/baby.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="image/kiddo.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="image/mid.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="image/rn.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+  </div>
+  
+<div class="column">
+    <p style="font-family:verdana">Name: Muhammad Adil Putera </p>
+ <p style="font-family:verdana">Nickname: Atta</p> 
+ <p style="font-family:verdana">Date of Birth: 21 January 2003</p>
+ <p style="font-family:verdana">Age:21</p>
+ <p style="font-family:verdana">Hometown: Sungai Petani, Kedah</p>
+ <p style="font-family:verdana">Hobbies: Listening to music, playing sports and video games.</p>
+ <p style="font-family:verdana">Fun Fact: People always assume as cold or mean person but I actually just chill and fun guy</p>
+ <p style="font-family:verdana">Life Motto: My solat will be waste if I decide to suicide.</p>
+<p><a href=https://www.instagram.com/atta_shi/" target="_blank">Visit my Instagram!</a></p>
+  </div>
+
+<br><br>
+
+ <h1 style="font-family:Arial">Short Video of Myself</h1>
+
+<center>
+<video width="100%" height="100%" controls>
+  <source src="video/short.mp4" type="video/mp4">
+</center>
+
+    </section>
+
+
+<footer>
+    <p>Disclaimer: The content on this website is for informational purposes only.</p>
+    <p>&copy; 2024 Atta's Website. All rights reserved.</p>
+    <p>Recommended Browser: Latest version of Chrome, Firefox, or Safari.</p>
+    <p>Recommended Resolution: 1920x1080</p>
+    <p>Last Updated: June 2024</p>
+    <div class="footer-icons">
+        <a href="https://www.instagram.com/atta_shi/" target="_blank"><img src="image/instagram.png" alt="Instagram"></a>
+        <a href="https://https://www.youtube.com/channel/UCSE4QnQvj-0LiERv1O5cTKA/" target="_blank"><img src="image/youtube.png" alt="Youtube"></a>
+        <a href="https://x.com/AttatitoY/" target="_blank"><img src="image/twitter.png" alt="Twitter"></a>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
